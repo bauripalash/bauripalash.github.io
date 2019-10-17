@@ -1,7 +1,7 @@
 title: Handcrafted By Palash Bauri # The title of the blog
 author: Palash Bauri # Your name 
 email: # your email shown in the footer
-url: / # this is your site's root address.
+url: https://bauripalash.github.io # this is your site's root address.
 baseurl: /
 description: > # this means to ignore newlines until "show_excerpts:"
   Projects for better world
