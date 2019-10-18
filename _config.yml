@@ -1,18 +1,23 @@
 title: Handcrafted By Palash Bauri # The title of the blog
 author: Palash Bauri # Your name 
-email: # your email shown in the footer
+email: heypalash@yandex.com # your email shown in the footer
 url: https://bauripalash.github.io # this is your site's root address.
 baseurl: /
 description: > # this means to ignore newlines until "show_excerpts:"
-  Projects for better world
+  Some Projects of Palash Bauri for better world 
 favicon: "./favicon.png" # set the favicon of the site 
-
+cover: assets/img/page.png
 show_excerpts: true # set to true to show excerpts on the homepage
   
 # Moving date format
 # refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this
+social:
+  facebook: bauripalash
+  instagram: bauripalash
+  twitter: bauripalash
 
-permalink: /:title
+permalink: info/:title
+
 
 # Build settings
 #theme: moving # note, please use huangyz0918/moving if you want to publish to Github Pages.

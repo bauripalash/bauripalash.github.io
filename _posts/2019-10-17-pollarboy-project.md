@@ -1,9 +1,10 @@
 ---
 layout: post
-title: Pollarboy Project
-tags: [hot, summer]
-cover: assets/img/abstract-fatal-error.png
-applink: https://google.com
+title: PollarBoy
+tags: [polling, people]
+cover: assets/img/abstract-no-comments.png
+applink: https://pollarboy.glitch.me
+description: Simple Link Based Polling App
+resblog: /info/pollarboy-project
 ---
-
-hello world project
+i

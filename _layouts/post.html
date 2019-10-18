@@ -1,0 +1,38 @@
+---
+layout: default
+---
+<nav class="navbar navbar-light navbar-expand-md navigation-clean">
+    <div class="container"><a class="navbar-brand" href="/">PALASH BAURI</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navcol">
+            <ul class="nav navbar-nav ml-auto">
+                <li class="nav-item" role="presentation"><a class="nav-link active" href="#">PROJECTS</a></li>
+                <li class="nav-item" role="presentation"><a class="nav-link" href="#">ABOUT</a></li>
+                <li class="nav-item" role="presentation"></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div>
+    <div class="container">
+        <div class="text-center">
+            <h1 style="color:#115f93"><strong><u>{{page.title}}</u></strong></h1>
+            <hr>
+            <img src="{{page.cover | relative_url}}" alt="" class="w-100" />
+        </div>
+        <hr>
+        <div class="text-center">
+            <strong style="font-size: 25px;"><u style="color:#115f93"> Project Description</u><br>{{page.description}}</strong>
+            <hr>
+            <strong style="font-size: 18px;"><u style="color:#115f93">Project Published on :</u><br> {{ page.date | date: "%-d %B %Y" }}</strong>
+            <br><hr>
+            <!-- <div class="btn-group"> -->
+                <a href="{{page.applink}}" class="btn btn-lg btn-primary">Open </a>
+                {% if page.resblog %}
+                <a href="{{page.resblog}}" class="btn btn-lg btn-info">Learn More</a>
+                {% endif %}
+            <!-- </div> -->
+        </div>
+    </div>
+</div>
+<br>
+<br>
