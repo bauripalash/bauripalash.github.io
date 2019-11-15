@@ -25,3 +25,4 @@ permalink: info/:title
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-sitemap
