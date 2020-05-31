@@ -1,72 +1,99 @@
 ---
 layout: default
 ---
-<!-- Start: Navigation Clean -->
-<nav class="navbar navbar-light navbar-expand-md navigation-clean">
-    <div class="container"><a class="navbar-brand" href="/">PALASH BAURI 👻</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-        <div class="collapse navbar-collapse" id="navcol">
-            <ul class="nav navbar-nav ml-auto">
-                <li class="nav-item" role="presentation"><a class="nav-link active" href="/">PROJECTS</a></li>
-                <li class="nav-item" role="presentation"><a class="nav-link" href="/about">ABOUT</a></li>
-                <li class="nav-item" role="presentation"></li>
-            </ul>
-        </div>
-    </div>
+
+<!-- NAVIGATION -->
+<nav>
+  <ul>
+    <li>
+      <a href="/" class="home">
+        <img src="/assets/imgs/cube.svg" alt="" class="navicon" />
+        <span class="navicon-text">Palash</span>
+      </a>
+    </li>
+    <li style="float: right;">
+      <a class="contact active" href="/about-en">About</a>
+    </li>
+  </ul>
 </nav>
-<!-- End: Navigation Clean -->
-<!-- Start: 1 Row 2 Columns -->
-<div>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-                <img src="assets/img/pluto-done.png" style="filter: blur(0px) brightness(109%) contrast(162%) grayscale(0%) hue-rotate(323deg) invert(0%) saturate(168%) sepia(0%);" alt="" class="w-100" />
-                <br /><br />
-            </div>
-            <!-- /.col-md-6 -->
-            <div class="col-md-6">
-                <div class="row align-items-center h-100">
-                    <div class="col text-center">
-                        <h1 style="color:#115f93">Handcrafted by Palash Bauri&nbsp;</h1>
-                        <p style="color:gray">Projects Towards Better Future...
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <!-- /.col-md-6 -->
-        </div>
-        <!-- /.row -->
-        <hr style="height: 8px;width:60%;margin-top : 35px; background-color: #115f93;" />
-        <div class="container">
-            <div class="row align-items-center h-100">
-                <div class="col text-center">
-                    <h2 style="color:#115f93"><strong>🛠️ Projects</strong> </h2>
-                </div>
-            </div>
-            <br><br>
-            <div class="mx-auto text-center">
-                <div class="row">
-                    {% for post in site.posts %}
-                    <div class="col-md-6">
-                        <div class="card" style="margin-bottom: 10px;">
-                            <img src="{{post.cover | relative_url}}" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">{{ post.title | escape }}</h5>
-                                <div class="card-text">{{post.description | escape }}</div><br>
-                                <a href="{{post.applink}}" class="btn btn-primary">Open</a>
-                                {% if post.resblog %}
-                                <a href="{{post.resblog}}" class="btn btn-info">Read More</a>
-                                {% endif %}
-                            </div>
-                        </div>
-                    </div>
-                    {% endfor %}
-                </div>
-            </div>
-        </div>
-    </div>
+<!-- END NAVIGATION -->
+
+<!-- BANNER -->
+<div class="banner-container">
+  <div class="banner-text">
+    <h3>Hi 👋, I'm,</h3>
+    <h3>Palash Bauri</h3>
+    <p>I'm A Student 📚 , Coder 👨‍💻 , Inventor 🛠</p>
+  </div>
+
+  <img
+    class="responsive-img banner-img"
+    src="{{site.url}}/assets/imgs/banner.svg"
+    alt="alt-text"
+  />
 </div>
+<br /><br />
+<!-- END BANNER -->
+
+<div class="website-box-container">
+  <h3 class="box-title">read articles 📝</h3>
+
+  {% for category in site.categories %} {% if category[0] == "blog" %} {% for
+  post in category.last reversed %}
+
+  <div class="website-box row">
+    <a href="{{post.link}}">
+      <div class="column left" style="vertical-align: middle;">
+        {% if post.has_img_icon %}
+        <img
+          class="responsive-img item-img"
+          src="{{post.icon}}"
+          alt="alt-text"
+        />
+        {% else %}
+        <h1>{{post.icon}}</h1>
+        {% endif %}
+      </div>
+      <div class="column right">
+        <h2>{{ post.title }}</h2>
+        <p>{{post.excerpt}}</p>
+        <p class="link">{{post.link}}</p>
+      </div>
+    </a>
+  </div>
+
+  {% endfor %} {% endif %} {% endfor %}
 </div>
-<!-- End: 1 Row 2 Columns -->
-<!-- Start: 1 Row 2 Columns -->
-<div>
-    <!-- End: 1 Row 2 Columns -->
+
+<div class="website-box-container">
+  <h3 class="box-title">works 🛠</h3>
+
+  {% for category in site.categories %} {% if category[0] == "work" %} {% for
+  post in category.last reversed %}
+
+  <div class="website-box row">
+    <a href="{{post.link}}">
+      <div class="column left" style="vertical-align: middle;">
+        {% if post.has_img_icon %}
+        <img
+          class="responsive-img item-img"
+          src="{{post.icon}}"
+          alt="alt-text"
+        />
+        {% else %}
+        <h1>{{post.icon}}</h1>
+        {% endif %}
+      </div>
+      <div class="column right">
+        <h2>{{ post.title }}</h2>
+        <p>{{post.excerpt}}</p>
+        <p class="link">{{post.link}}</p>
+      </div>
+    </a>
+  </div>
+
+  {% endfor %} {% endif %} {% endfor %}
+</div>
+
+{% include social-icons.html %}
+

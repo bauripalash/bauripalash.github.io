@@ -1,0 +1,9 @@
+---
+layout: post
+title:  "Programming Articles"
+has_img_icon: True
+icon: assets/imgs/coding.svg
+categories: blog
+link: "https://dev.palashbauri.in/"
+---
+Programming related articles about developing cool software projects.

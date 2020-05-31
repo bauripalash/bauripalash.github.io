@@ -1,0 +1,9 @@
+---
+layout: post
+title:  "Research Articles"
+has_img_icon: True
+categories: blog
+icon: assets/imgs/research.svg
+link: "https://r.palashbauri.in/"
+---
+Research and Analysis articles on Daily Science experience , natural phenomena and stuff like that.

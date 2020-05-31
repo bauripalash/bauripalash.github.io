@@ -1,0 +1,9 @@
+---
+layout: post
+title:  "Project X"
+has_img_icon: True
+categories: work
+icon: assets/imgs/rocket.svg
+link: "https://x.palashbauri.in/"
+---
+Some of my publicly available (if any) semi secret projects under `Project X`
