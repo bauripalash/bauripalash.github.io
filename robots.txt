@@ -1,4 +1,4 @@
 User-Agent: *
 Disallow: 
 
-Sitemap: https://bauripalash.github.io/sitemap.xml
+Sitemap: https://palashbauri.in/sitemap.xml

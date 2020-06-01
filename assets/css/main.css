@@ -213,8 +213,11 @@ article.page-content{
   max-width: 800px;
   font-size: 23px;
   margin: 10px auto;
+  padding: 0 10px;
+  word-wrap: break-word;
 }
 
 article.page-content img{
   width:90%;max-width:400px;height:auto;text-align:center;display:block;margin-left:auto;margin-right:auto
 }
+

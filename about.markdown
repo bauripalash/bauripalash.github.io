@@ -2,6 +2,8 @@
 layout: page
 title: About Me
 permalink: /about-en/
+redirect_from:
+  - /about
 ---
 
 ![](/assets/imgs/palash.jpg)

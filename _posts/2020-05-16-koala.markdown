@@ -4,4 +4,5 @@ title:  "Koala"
 icon: "K"
 categories: red
 link: "https://blog.palashbauri.in/koala"
+sitemap: false
 ---

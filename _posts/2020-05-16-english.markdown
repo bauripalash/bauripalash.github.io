@@ -4,6 +4,7 @@ title:  "English Articles"
 icon: "A B C"
 categories: blog
 link: "https://blog.palashbauri.in/en/"
+sitemap: false
 ---
 English articles about cool stuff such as Science, Space , Computer Programming and or some Random stuff
 

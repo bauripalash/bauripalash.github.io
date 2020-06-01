@@ -4,5 +4,6 @@ title:  "Bengali Articles"
 icon: "ক খ গ"
 categories: blog
 link: "https://blog.palashbauri.in/"
+sitemap: false
 ---
 Bengali articles about cool stuff such as Science, Space , Computer and or some Random stuff
