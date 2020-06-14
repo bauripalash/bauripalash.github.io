@@ -43,6 +43,8 @@ plugins:
   - jekyll-seo-tag  
   - jekyll-redirect-from
 
+include: [".well-known"]
+
 whitelist:
   - jekyll-redirect-from  
 # Exclude from processing.
