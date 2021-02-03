@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  "Programming Articles"
+title:  "বাংলা ভাবনা"
 has_img_icon: True
 icon: assets/imgs/coding.svg
 categories: blog
-link: "https://dev.palashbauri.in/"
+link: "https://log.palashbauri.in/"
 sitemap: false
 ---
-Programming related articles about developing cool software projects.
+বাংলা ভাবনা চিন্তা দর্শন সম্পর্কিত লেখালেখাই #লগ
