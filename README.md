@@ -1,5 +1,7 @@
 # ~palash_bauri 
 
+<link rel="stylesheet" href="https://andybrewer.github.io/mvp/mvp.css">
+
 ## Index
 * [I watched](https://bauripalash.github.io/iwatched/)
 > rankings according to me of the movies I watched
